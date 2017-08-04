@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SudokuController">
+   <center>
+      <Pane prefHeight="600.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="restart" layoutX="158.0" layoutY="519.0" mnemonicParsing="false" onAction="#handleRestartAction" prefHeight="27.0" prefWidth="75.0" text="Restart" />
+            <Button fx:id="commit" layoutX="258.0" layoutY="453.0" mnemonicParsing="false" onAction="#handleCommitAction" prefHeight="27.0" prefWidth="75.0" text="Commit" />
+            <Button fx:id="start" layoutX="157.0" layoutY="396.0" mnemonicParsing="false" onAction="#handleStartAction" prefHeight="27.0" prefWidth="75.0" text="Start" />
+            <Label fx:id="hint" layoutX="1.0" layoutY="582.0" prefHeight="18.0" prefWidth="400.0" text=" Hello,Susan! It's Time For Sudoku!" />
+            <TextField fx:id="t1" layoutX="50.0" layoutY="50.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t2" layoutX="80.0" layoutY="50.0" maxWidth="30.0" prefHeight="30.0" />
+            <TextField fx:id="t3" layoutX="110.0" layoutY="50.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t4" layoutX="150.0" layoutY="50.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t5" layoutX="180.0" layoutY="50.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t6" layoutX="210.0" layoutY="50.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t7" layoutX="250.0" layoutY="50.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t8" layoutX="280.0" layoutY="50.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t9" layoutX="310.0" layoutY="50.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t10" layoutX="50.0" layoutY="80.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t11" layoutX="80.0" layoutY="80.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t12" layoutX="110.0" layoutY="80.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t13" layoutX="150.0" layoutY="80.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t14" layoutX="180.0" layoutY="80.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t15" layoutX="210.0" layoutY="80.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t16" layoutX="250.0" layoutY="80.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t17" layoutX="280.0" layoutY="80.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t18" layoutX="310.0" layoutY="80.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t19" layoutX="50.0" layoutY="110.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t20" layoutX="80.0" layoutY="110.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t21" layoutX="110.0" layoutY="110.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t22" layoutX="150.0" layoutY="110.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t23" layoutX="180.0" layoutY="110.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t24" layoutX="210.0" layoutY="110.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t25" layoutX="250.0" layoutY="110.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t26" layoutX="280.0" layoutY="110.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t27" layoutX="310.0" layoutY="110.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t28" layoutX="50.0" layoutY="150.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t29" layoutX="80.0" layoutY="150.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t30" layoutX="110.0" layoutY="150.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t31" layoutX="150.0" layoutY="150.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t32" layoutX="180.0" layoutY="150.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t33" layoutX="210.0" layoutY="150.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t34" layoutX="250.0" layoutY="150.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t35" layoutX="280.0" layoutY="150.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t36" layoutX="310.0" layoutY="150.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t37" layoutX="50.0" layoutY="180.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t38" layoutX="80.0" layoutY="180.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t39" layoutX="110.0" layoutY="180.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t40" layoutX="150.0" layoutY="180.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t41" layoutX="180.0" layoutY="180.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t42" layoutX="210.0" layoutY="180.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t43" layoutX="250.0" layoutY="180.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t44" layoutX="280.0" layoutY="180.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t45" layoutX="310.0" layoutY="180.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t46" layoutX="50.0" layoutY="210.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t47" layoutX="80.0" layoutY="210.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t48" layoutX="110.0" layoutY="210.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t49" layoutX="150.0" layoutY="210.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t50" layoutX="180.0" layoutY="210.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t51" layoutX="210.0" layoutY="210.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t52" layoutX="250.0" layoutY="210.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t53" layoutX="280.0" layoutY="210.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t54" layoutX="310.0" layoutY="210.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t55" layoutX="50.0" layoutY="250.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t56" layoutX="80.0" layoutY="250.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t57" layoutX="110.0" layoutY="250.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t58" layoutX="150.0" layoutY="250.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t59" layoutX="180.0" layoutY="250.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t60" layoutX="210.0" layoutY="250.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t61" layoutX="250.0" layoutY="250.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t62" layoutX="280.0" layoutY="250.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t63" layoutX="310.0" layoutY="250.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t64" layoutX="50.0" layoutY="280.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t65" layoutX="80.0" layoutY="280.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t66" layoutX="110.0" layoutY="280.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t67" layoutX="150.0" layoutY="280.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t68" layoutX="180.0" layoutY="280.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t69" layoutX="210.0" layoutY="280.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t70" layoutX="250.0" layoutY="280.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t71" layoutX="280.0" layoutY="280.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t72" layoutX="310.0" layoutY="280.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t73" layoutX="50.0" layoutY="310.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t74" layoutX="80.0" layoutY="310.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t75" layoutX="110.0" layoutY="310.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t76" layoutX="150.0" layoutY="310.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t77" layoutX="180.0" layoutY="310.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t78" layoutX="210.0" layoutY="310.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t79" layoutX="250.0" layoutY="310.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t80" layoutX="280.0" layoutY="310.0" prefHeight="30.0" prefWidth="30.0" />
+            <TextField fx:id="t81" layoutX="310.0" layoutY="310.0" prefHeight="30.0" prefWidth="30.0" />
+            <Button fx:id="show" layoutX="65.0" layoutY="453.0" mnemonicParsing="false" onAction="#handleShowAction" prefHeight="27.0" prefWidth="75.0" text="Answer" />
+            <Label fx:id="history" layoutX="134.0" layoutY="358.0" text=" History Win Times :   " />
+            
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

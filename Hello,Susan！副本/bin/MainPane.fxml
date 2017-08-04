@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--导入JavaFXML类-->
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<!--布局控件BorderPane，fx:controller属性用于声明事件处理的Controller，值为Controller类的类全名-->
+<!--xmlns用于声明默认命名空间，这里的声明随着你安装的Java JDK版本号的不同可以不同，但是最好不要比你安装的JDK版本高-->
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPaneController">
+   <right>
+      <Pane prefHeight="600.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnHello" layoutX="150.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="100.0" text="Daily Advice!" />
+            <TextArea fx:id="TextArea1" layoutX="64.0" layoutY="125.0" prefHeight="150.0" prefWidth="272.0">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font></TextArea>
+            <Button fx:id="sudoku" layoutX="240.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleSudokuAction" prefWidth="100.0" text="Play Sudoku!" />
+            <Button fx:id="music" layoutX="64.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleMusicAction" prefWidth="100.0" text="Play Music!" />
+            <Button fx:id="start" layoutX="165.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleStartAction" prefHeight="70.0" prefWidth="70.0" text="Start!" />
+            <Label fx:id="time" layoutX="64.0" layoutY="59.0" prefHeight="34.0" prefWidth="296.0" text="2017.03.31 20:28:00 Friday">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="memory" layoutX="64.0" layoutY="99.0" prefHeight="17.0" prefWidth="270.0" text="         Days Since Harper Become Catty !" />
+            <ImageView fx:id="left" fitHeight="100.0" fitWidth="100.0" layoutX="60.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="right" fitHeight="100.0" fitWidth="100.0" layoutX="240.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <effect>
+            <Glow />
+         </effect>
+      </Pane>
+   </right>
+</BorderPane>

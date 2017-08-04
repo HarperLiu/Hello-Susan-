@@ -1,0 +1,33 @@
+
+/*root类选择器给所有的元素设置样式*/
+.root {
+   
+    /*-fx-background-image: url(image/image1.jpg);*/
+    -fx-background-size: stretch stretch;
+    -fx-background-position: center center;
+    -fx-background-color:rgb(129, 216, 207);
+   
+}
+/*button类型选择器设置所有Button的背景色*/
+.button {
+  /*-fx-background-color: darkturquoise;*/
+}
+
+/*hover伪类选择器设置鼠标移过Button时的背景色*/
+.button:hover {
+    -fx-background-color: lightskyblue;
+}
+
+/*id选择器设置Label标题的样式*/
+#hint {
+    -fx-font-size: 13px;
+    -fx-text-fill: darkslategray;
+    -fx-background-color:#bfe9fb;
+    
+}
+#history {
+    -fx-font-size: 13px;
+    -fx-text-fill: darkslategray;
+    -fx-background-color:rgb(129, 216, 207);
+    
+}

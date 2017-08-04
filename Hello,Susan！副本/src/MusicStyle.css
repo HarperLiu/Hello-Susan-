@@ -1,0 +1,12 @@
+.button{
+	-fx-border-radius: 30; 
+	-fx-background-radius:30
+}
+.root {
+   
+    -fx-background-color: #ff8c78;
+    
+}
+.label{
+	-fx-background-color: #ffffff;
+}

@@ -1,0 +1,16 @@
+.button {
+    -fx-background-color: #cfe6ff;
+}
+
+/*hover伪类选择器设置鼠标移过Button时的背景色*/
+.button:hover {
+    -fx-background-color: #f4f3de;
+}
+.root{
+	 -fx-background-color: #9fe0f6;
+	 /*-fx-background-image: url(image/image2.jpeg);*/
+}
+#start{
+	-fx-border-radius: 35; 
+	-fx-background-radius:35
+}
